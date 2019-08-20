@@ -1,0 +1,35 @@
+@font-face{
+	font-family: 'UniSansRegular'; 
+	src: url("fonts/UniSansRegular.otf");
+}
+@font-face{
+	font-family: 'OS-Bold';
+	src: url("fonts/OpenSans-Bold.ttf");
+}
+html{
+	height: 100%;
+	width: 	100%;
+}
+body{
+	height: 100%;
+	width: 	100%;
+	background-color: #e8e8e8;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-family: 'UniSansRegular';
+}
+h1,h2,h3{margin: 0;}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+.centerXY{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+}
+.pointer{
+	cursor: pointer;
+}

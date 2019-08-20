@@ -1,0 +1,67 @@
+@font-face{
+	font-family: 'Roboto_R'; 
+	src: url("fonts/Roboto-Regular.ttf");
+}
+
+body{
+	font-family: 'Roboto_R';
+	color: #fff;
+	font-size: 15px;
+	background: #ece9e6; /* fallback for old browsers */
+  	background: -webkit-linear-gradient(to right, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  	background: linear-gradient(to right, #ece9e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+html,body{
+	padding: 0;
+	margin: 0;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.padSect{
+	padding: 30px 10%;
+}
+.pWM{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.btn{
+	border-radius: 20px;
+	display: inline-block;
+	padding: 7px 25px;
+	line-height: 
+}
+#menu{
+	height: 50px;
+	width: 100%;
+	top: 0px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 1;
+	line-height: 50px;
+	vertical-align: middle;
+}
+
+#connexMenu{
+	float: right;
+	background-color: #224e6b;
+	height: 100%;
+	line-height: 50px;
+
+}
+.onglMenu{
+	color: #000;
+	float: right;
+	margin: 0px 25px;
+}
+#connexMenu p{
+	vertical-align: middle;
+	padding: 0px 25px;
+}

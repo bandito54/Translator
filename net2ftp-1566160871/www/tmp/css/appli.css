@@ -1,0 +1,166 @@
+body{
+	overflow: hidden;
+}
+#topBar{
+	height: 50px;
+	background-color: #fff;
+	z-index: 2;
+	position: relative;
+}
+#rechercher{
+	float: right;
+	margin: 8px 15px;
+	width: 80%;
+	display: flex;
+	justify-content: flex-end;
+}
+#searchInp{
+	border: 0px;
+	background-color: #f6f6f6;
+	height: 35px;
+	padding: 0px 10px;
+	width: 50%;
+}
+#searchInp:focus{
+	border-bottom: 2px solid #4b4b4b;
+}
+#submitSearch{
+	background-color: #4b4b4b;
+	padding: 0px 15px;
+	line-height: 35px;
+	cursor: pointer;
+}
+#extendLB{
+	background-color: #3867d6;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	cursor: pointer;
+}
+#openMenu{
+	width: 70%;
+	height: auto;
+	transition: all ease .5s;
+	transform: translate3d(-50%,-50%,0);
+	top: 50%;
+	left: 50%;
+	position: absolute;	
+}
+#leftBar{
+	background-color: #2d98da;
+	height: 100%;
+	width: 50px;
+	position: absolute;
+	box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.55);
+	z-index: 1;
+	transition: all ease .5s;
+}
+#leftBar.active{
+	width: 20%;
+}
+.iconMenu img{
+	width: 35px;
+	height: auto;
+}
+.iconMenu{
+	width: 50px;
+	height: inherit;
+	position: relative;
+	border-bottom: 1px solid #6dcff6;
+	cursor: pointer;
+}
+.endGroup{
+	width: 100%;
+	background-color: #6dcff6;
+	height: 15px;
+}
+.onglets{
+	height: auto;
+	width: 100%;
+
+}
+.onglName{
+	padding-left: 5px;
+	white-space:nowrap;
+	line-height: 50px;
+	vertical-align: middle;
+	margin: 0px 0px 0px 0px;
+	display: inline-block;
+}
+.onglets.active .onglName{
+	font-weight: bold;
+}
+.onglets.active{
+	box-shadow: inset -3px 0px 0px 0px #00bff3;
+}
+#decon{
+	position: absolute;
+	bottom: 50px;
+	background-color: #217ab1;
+	display: flex;
+	width: 100%;
+}
+.headerOng{
+	display: flex;
+}
+.sub_menu{
+	height: 0px;
+	overflow: hidden;
+	background-color: #05649C;
+	text-align: center;
+}
+#elem_gm_listes :nth-child(2n){
+	background-color: rgba(255,255,255,0.1);
+}
+.onglets.active .sub_menu{
+	height: auto;
+}
+#gm_adddico_form{
+	display: none;
+}
+#gm_adddico.active + #gm_adddico_form{
+	display: block;
+}
+.listes p{
+	margin: 0px;
+	padding: 5px;
+}
+
+/*------------ 
+	Content 
+------------*/ 
+
+#content{
+	position: absolute;
+	width: 80%;
+	right: 0;
+	top: 0;
+	height: 100%;
+}
+
+#activePage{
+	background-color: #fff;
+	border-radius: 5px;
+	width: 90%;
+	height: 90%;
+	max-height: 90%;
+	margin-top: 2%;
+}
+
+.page
+{
+	height:100%;
+	width:100%;
+	display:none;
+	overflow:auto;
+	color:#696969;
+}
+.page.pact
+{
+	display:block;
+	padding-top: 50px;
+}
+
+.hidden{
+	display: none;
+}

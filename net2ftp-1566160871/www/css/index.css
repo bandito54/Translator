@@ -1,0 +1,330 @@
+@font-face{
+	font-family: 'Roboto_R'; 
+	src: url("fonts/Roboto-Regular.ttf");
+}
+
+
+@keyframes apparition{
+  0% {
+    opacity: 0;
+  }
+  100% {
+  	opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+html,body{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Roboto_R';
+	color: #fff;
+	font-size: 15px;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.padSect{
+	padding: 30px 10%;
+}
+.pWM{
+	margin: 0;
+}
+.bold{
+	font-weight: bold;
+}
+.btn{
+	border-radius: 20px;
+	display: inline-block;
+	padding: 7px 25px;
+	line-height: 
+}
+#menu{
+	height: 50px;
+	width: 100%;
+	top: 0px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 1;
+}
+#connexMenu{
+	float: right;
+	background-color: #224e6b;
+	height: 100%;
+	line-height: 50px;
+}
+#connexMenu p{
+	vertical-align: middle;
+	padding: 0px 25px;
+}
+#accueil{
+	width: 100%;
+	position: relative;
+	background: url("../media/img/bgAccueil.jpg") center fixed;
+	height: 400px;
+}
+#cttAccueil{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate3d(0,-50%,0);
+	max-width: 50%;	
+}
+#dicotiTle{
+	font-size: 3.5em;
+	color: #535353;
+	margin-bottom: 20px;
+}
+.openPhrase{
+	color: #355caa;
+	font-size: 1.4em;
+	display: inline-block;
+}
+#containTres{
+	display: inline-block;
+	margin: 0px 10px;
+	width: 100px;
+}
+#tresTitle{
+	font-size: 1.6em;
+	background-color: #ff931e;
+	padding: 0px 5px;
+	color: #fff;
+    display: inline-block;
+	transition: all ease .5s;
+	height: 35px;
+	line-height: 35px;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.fOut{
+	color: transparent;
+	width: 0px;
+	padding: 0px !important;
+
+	transition: all ease .5s;
+}
+.fIn{
+	color: #fff;
+	width: 200px;
+	transition: all ease .5s;
+}
+#inscrAccueil{
+	background-color: #224e6b;
+}
+#connAccueil{
+	background-color: #37a5e4;
+	margin-left: 35px;
+}
+#btnAccueil{
+	margin-top: 25px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+/* */
+
+#little_pres{
+	background-color: #37a5e4;
+	position: relative;
+}
+#pres{
+	width: 50%;
+}
+#svgAccueil{
+	width: 30%;
+	right: 5%;
+	bottom: 15%;
+	position: absolute;
+}
+svg{
+	overflow: visible;
+}
+#Langues{
+    transform: translateY(-350px);
+    opacity: 0;
+    animation: apparition .3s ease forwards;
+}
+#A_z{
+    transform: translateY(-250px);
+    opacity: 0;
+    animation: apparition .3s  ease forwards;
+}
+#Dico{
+    transform: translateY(-150px);
+    opacity: 0;
+    animation: apparition .3s .1s ease forwards;
+}
+
+/* */
+
+#enBref{
+	background-color: #f2f3f7;
+}
+#ttlenBref{
+	padding: 10px 15px;
+	background-color: #2b6bab;
+	width: 60%;
+}
+#listingBref{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	color: #474747;
+	margin-top: 20px;
+}
+.iconsBref{
+	width: 80px;
+	height: 80px;
+}
+.listsB{
+	display: flex;
+	width: 300px;
+	margin: 15px;
+}
+.listsB p{
+	margin-left: 10px;
+}
+
+/* */
+
+#sondage{
+	text-align: center;
+	background-color: #224e6b;
+	position: relative;
+	overflow: hidden;
+}
+#checkboxes{
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	transition: all ease .5s;
+}
+.subGraph{
+	width: 80%;
+	height: 20px;
+	background-color: rgba(255,255,255,0.2);
+	margin: 15px auto;
+	position: relative;
+	overflow: hidden;
+}
+.graph{
+}
+.resGraph{
+	position: absolute;
+	height: 100%;
+	background-color: #fff;
+	transition: all ease .5s;
+	color: #224e6b;
+}
+#resSond{
+
+}
+/* Masquer le bouton radio d'origine */
+input[type=radio]{
+    display: none;
+}
+/* Affichage par défaut du bouton radio personnalisé */
+input[type=radio] + label:before {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-top: -3px;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 17px;
+    height: 17px;
+}
+/* Affichage du bouton radio personnalisé quand il est sélectionné */
+input[type=radio]:checked + label:before {
+    background: #37a5e4;
+    border-color: #37a5e4;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+}
+.checkbox{
+    margin: 14px 15px 14px 15px;
+    font-weight: bold;
+}
+label{
+    cursor:pointer;
+}
+#submitSond{
+	position: absolute;
+	background-color: #318cb8;
+	padding: 5px 15px;
+	font-size: 1.1em;
+	left: 50%;
+	bottom: -50px;
+	transform: translate3d(-50%,0,0);
+	transition: all ease .5s;
+	cursor: pointer;
+}
+#submitSond.subActive{
+	bottom: 0px;
+}
+
+/* */
+
+#abo{
+	background-color: #318cb8;
+	width: 50%;
+}
+#contact{
+	background-color: #37a5e4;
+	width: 50%;
+	padding: 25px;
+}
+#aboContact{
+	display: flex;
+}
+#inscrAbo{
+	background-color: #224e6b;
+	margin-right: 15px;
+}
+#connAbo{
+	background-color: #fff;
+	color: #224e6b;
+}
+#btnAbo{
+	display: flex;
+	margin-top: 25px;
+}
+#resSocAbo{
+	margin: 40px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.iconsRes{
+	width: 40px;
+	height: auto;
+}
+#ttlCont{
+	color: #224e6b;
+}
+.padabo{
+	padding: 25px 10%;
+}
+#mails{
+	display: flex;
+}
+#mailsP{
+	top: 50%;
+	margin-left: 15px;
+}
+/* */
+
+footer{
+	background-color: #224e6b;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}

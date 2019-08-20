@@ -1,0 +1,16 @@
+#content{
+	color: #000;
+	margin: 90px 5% 30px 5%;
+}
+.titleEq{
+	border-bottom: 2px solid #224e6b;
+	display: inline-block;
+	padding-bottom: 15px;
+}
+p{
+	text-align: justify;
+}
+h1{
+	text-align: center;
+	color: #224e6b;
+}

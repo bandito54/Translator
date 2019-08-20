@@ -1,0 +1,94 @@
+#param_list
+{
+
+}
+#param_list .param_oneparam
+{
+	border-bottom:1px solid rgba(0,0,0,0.2);
+	height:70px;
+	line-height:70px;
+	vertical-align:middle;
+	width:100%;
+	padding-left:20px;
+	cursor:pointer;
+	display:block;
+}
+#param_list .param_oneparam:hover
+{
+	background-color:rgba(0,0,0,0.05);
+}
+#param_list .param_oneparam img
+{
+	height:30px;
+	margin-right:20px;
+}
+.quizz_title
+{
+	margin-top:1%;
+	padding-top:2%;
+	color: #2c3e50;
+	font-weight:bold;
+	font-size:3em;
+}
+#quizz_container_resp
+{
+	width:100%;
+	text-align:center;
+	position:fixed;
+	bottom:0px;
+}
+.quizz_onerep
+{
+	width:48%;
+	display:inline-block;
+	padding:3%;
+	margin:1%;
+	text-align:center;
+	box-sizing:border-box;
+	border-radius:5px;
+	background-color: #2c3e50;
+	font-size:1.8em;
+	color:white;
+	cursor:pointer;
+}
+#quizz_container_fin
+{
+	text-align:center;
+}
+#quizz_time
+{
+	position:fixed;
+	top:0px;
+	right:0px;
+}
+#qz_tab_fin
+{
+	margin:auto;
+	border:none;
+	border-radius:5px;
+	border-collapse:collapse;
+	background-color:rgba(50,50,50,0.2);
+	margin-top:2%;
+	font-size:0.8em;
+}
+#qz_tab_fin th
+{
+	padding:2%;
+	text-align:center;
+}
+#qz_tab_fin td
+{
+	padding:1%;
+	text-align:center;
+}
+#st_content
+{
+	text-align:center;
+	margin:2%;
+}
+#st_can
+{
+	background-color:white;
+	margin:auto;
+	display:block;
+}

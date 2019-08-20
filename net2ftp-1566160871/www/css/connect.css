@@ -1,0 +1,179 @@
+/* 
+	Both pages
+*/
+
+body{
+	background: url('../media/img/bgConnect.jpeg') center fixed;
+	background-size: cover; 
+	overflow: hidden;
+}
+
+/*
+	Page Connexion
+ */
+ .divCI{
+ 		width: 70%; 
+	display: flex;
+	font-family: 'OS-Bold';
+ }
+#inscr::before{
+	content: 'DICOTI';
+	position: absolute;
+	top: -55px;
+	right: 25px;
+	font-size: 55px;
+	font-weight: bold;
+}
+#conIns::before{
+	content: 'DICOTI';
+	position: absolute;
+	top: -55px;
+	left: 25px;
+	font-size: 55px;
+	font-weight: bold;
+}
+#connect{
+	background-color: #fff;
+	width: 70%;
+}
+#sInscr{
+	background-color: rgba(27,90,152,0.84);
+	width: 30%;
+}
+.hConnect{
+	font-family: 'OS-Bold';
+	margin-bottom: 20px;
+}
+.cttConIns{
+	padding: 20px 25px; 
+}
+#hConnex{
+	color: #1b5a98;
+}
+.inputForm{
+	border: none;
+	border-bottom: 1px solid #666;
+	width: 100%;
+	font-family: inherit;
+	margin-top: 35px;
+	height: 28px;
+	transition:0.5s;
+	cursor:text;
+}
+.inputForm.miss
+{
+	border-bottom:1px solid red;
+	background-color:rgba(255,128,128,0.1);
+}
+.inputForm:focus + .placeHolderInp, .spanInp.active .placeHolderInp{
+	top: -20px;
+}
+.spanInp{
+	position: relative;
+	height: 64px;
+}
+.placeHolderInp{
+	color: #c5c5c5;
+	position: absolute;	
+	top: 0px;
+	left: 0px;
+	font-family: 'UniSansRegular';
+	transition: all ease .5s;
+}
+.subConIn{
+	margin: 30px 0px;
+	padding: 0px 15px; 
+}
+#subConnex{
+	background-color: #0b3e72;
+	display: inline-block;
+	position: relative;
+	transition:0.5s;
+}
+#subConnex:hover{
+	background-color:rgba(27,90,152)
+}
+#subConnex::after{
+	content: ">>";
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translate3d(0,-50%,0);
+}
+#subConnex p{
+	margin-right: 35px;
+}
+#subSInscr{
+	background-color: transparent;
+	border: 2px solid #fff;
+	display: inline-block;
+	position: relative;
+	transition:0.5s;
+}
+#subSInscr:hover{
+	background-color:rgba(11,62,114,0.5);
+	border:2px solid transparent;
+}
+#subSInscr p{
+	margin-right: 55px;
+}
+#subSInscr::after{
+	content: ">>";
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translate3d(0,-50%,0);
+}
+.pSinscr{
+	font-family: 'UniSansRegular';
+}
+
+#errorMess{
+	top: -50px;
+	position: absolute;
+	width: 100%;
+	background-color: #c1392b;
+	padding: 10px 15px;
+	text-align: center;
+	transition: all ease .5s;
+
+}
+#errorMess.active{
+	top: 0px;
+}
+/*
+	Page Inscription
+*/
+
+#inscrMess{
+	background-color : rgba(27,90,152,0.84);
+	width: 30%;
+}
+#formInscr{
+	background-color: #fff;
+	width: 70%;
+}
+.choix{
+	display: inline-block;
+	margin:20px 25px 0px 25px; 
+	color: #dcdcdc;
+}
+.choix.active{
+	color: #0b3e72;
+	border-bottom: 2px solid #0b3e72;
+}
+#choixInscr{
+	text-align: center;
+}
+#cttInscrConnect, #cttInscrFb
+{
+	width:0%;
+	overflow:hidden;
+	transition:1s;
+	display:inline-block;
+	vertical-align:top;
+}
+#cttInscrConnect.active, #cttInscrFb.active
+{
+	width:99%;
+}
